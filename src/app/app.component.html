@@ -1,0 +1,90 @@
+<!--
+  <video autoplay muted loop id="myVideo">
+  <source src="mixkit-close-up-of-tree-branches-84.mp4" type="video/mp4">
+ 
+
+  </video>
+-->
+<div class="page-wrapper">
+<!-- MENU SIDEBAR-->
+<aside class="menu-sidebar d-none d-lg-block">
+  <div class="logo">
+    <a routerLink="/products">
+      <img src="assets/images/products/logo.png" alt="luv2shop" class="img-responsive">
+    </a>
+  </div>
+    
+     <app-product-category-menu></app-product-category-menu>
+</aside>
+</div>
+
+<!-- END MENU SIDEBAR-->
+
+<!-- PAGE CONTAINER for the search and text and button-->
+<div class="page-container">
+  <!-- HEADER DESKTOP-->
+  <header class="header-desktop">
+    <div class="section-content section-content-p30">
+      <div class="container-fluid">
+        <div class="header-wrap">
+
+          
+          <app-search></app-search>
+          <!--
+          <form class="form-header" onsubmit="return false;" method="GET">
+            <input class="au-input au-input-xl" type="text" name="search"
+              placeholder="Search for data ..." />
+            <button class="au-btn-submit" type="submit">
+              Search
+            </button>
+          </form>
+          -->
+          
+          <app-cart-status></app-cart-status>
+
+          <!--
+          <div class="cart-area d-n">
+            <a href="shopping-detail.html">
+              <div class="total">19.22 <span> 2</span> </div> <i class="fa fa-shopping-cart"
+                aria-hidden="true"></i>
+            </a>
+          </div>
+          -->
+          
+        </div>
+        <div class="account-wrap"></div>
+      </div>
+    </div>
+    
+    
+  </header>
+  <!-- END HEADER DESKTOP-->
+
+
+  <!-- MAIN CONTENT-->
+
+
+  <router-outlet></router-outlet>
+
+
+
+  <footer>
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>
+  </footer>
+
+  <body>
+    <div class="section">
+
+      <div class="video-container">
+          <div class="color-overlay"></div>
+          <video autoplay loop muted>
+              <source src="video.mp4" type="video/mp4">
+          </video>
+      </div>
+
+  </div>
+  </body>
