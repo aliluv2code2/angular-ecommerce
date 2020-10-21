@@ -10,8 +10,9 @@ import java.util.List;
 
 @CrossOrigin("http://localhost:4200")
 @RepositoryRestResource
-public interface StateRepository extends JpaRepository<State, Integer> {
+public interface StateRepository extends JpaRepository<State, Integer> {// State it;s the entity class
+	 																	// and Integer it's the primary key in the class
 
     List<State> findByCountryCode(@Param("code") String code);
-
+    // we need to use http://localhost:8080/api/states/search/findByCountryCode?code=pl to find the polish states :)
 }
