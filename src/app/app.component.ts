@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-ecpmmerece';
+  myimage: string = 'assets/images/products/alexander-kaunas-O_4JUB4xeiU-unsplash.jpg'
 }

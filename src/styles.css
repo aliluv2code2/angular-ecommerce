@@ -111,8 +111,11 @@ a,a:hover{
 }
 
 .page-container{
-    background:#e5e5e5;
+    background-image:url(assets/images/products/alexander-kaunas-O_4JUB4xeiU-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
     padding-left:200px
+    
 }
 
 .main-content{
