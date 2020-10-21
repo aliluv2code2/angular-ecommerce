@@ -20,6 +20,7 @@ body{
     color:#666;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale
+    
 }
 
 ul{
@@ -106,14 +107,14 @@ a,a:hover{
 
 .page-wrapper{
     overflow:hidden;
-    background:#e5e5e5;
+    background:#924747;
     padding-bottom:8vh
 }
 
 .page-container{
-    background-image:url(assets/images/products/alexander-kaunas-O_4JUB4xeiU-unsplash.jpg);
+    /* background-image:url(assets/images/products/alexander-kaunas-O_4JUB4xeiU-unsplash.jpg);
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     padding-left:200px
     
 }
@@ -1068,20 +1069,27 @@ footer ul li{
     opacity: 0.7;
   }
   
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  .fullscreen-video-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
   }
   
-  .color-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: lightblue;
-    width: 100%;
-    height: 100vh;
-    opacity: 0.5;
+  .fullscreen-video-wrap video{
+    min-height:100%;
+    min-width:100%;
   }
-
+  
+  video#myVideo {
+    position: fixed; right: 0%; bottom: 0%; left: 0%; top: 0%;
+    background-position: 100%;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto;
+     z-index: -100;
+    background: url(assets/video.mp4) no-repeat;
+    background-size: -50%;
+    margin: 0 auto;
+   }
