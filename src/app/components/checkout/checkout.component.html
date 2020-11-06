@@ -1,13 +1,25 @@
 <div class="main-content page-m" >
     <div class="section-content section-content-p30">
         <div class="container-fluid">
+            <!--
+            <div class="fullscreen-video-wrap">
             
+            <video autoplay muted loop id="myVideo">
+                <source src="assets/video.mp4" type="video/mp4">
+               
+              
+                </video>
+
+                -->
+
+                <!-- I deleted class="form-area" from all the formGroupName in <div formGroupName="customer" > and the rest to delete the formand make the background the video itself-->
+
             <form [formGroup]="checkoutFormGroup" (ngSubmit)="onSubmit()"><!-- checkoutFormGroup is exactly same in checkout.component-->
                 <!--(ngSubmit)="onSubmit()" simply we will call our method we have made in checkout.component when we will click Parchase -->
                 
                 <!--customer form group-->
                 
-                <div formGroupName="customer" class="form-area"><!-- customer is exactly same from customer: this.formBuilder.group({ in checkout.component-->
+                <div formGroupName="customer" ><!-- customer is exactly same from customer: this.formBuilder.group({ in checkout.component-->
                     <h3>Customer</h3>
                     <div class="row">
                         <div class="col-md-2"><label>First Name</label></div>
@@ -57,7 +69,7 @@
                 </div>
 
                 <!--Shipping Address-->
-                <div formGroupName="shippingAddress" class="form-area"><!-- shippingAddress is exactly same from customer: this.formBuilder.group({ in checkout.component-->
+                <div formGroupName="shippingAddress" ><!-- shippingAddress is exactly same from customer: this.formBuilder.group({ in checkout.component-->
                     <h3>Shipping Address</h3>
                     <div class="row">
                         <div class="col-md-2"><label>Country</label></div>
@@ -148,7 +160,7 @@
                     </label>
                 </div>
                     <!-- Billing Address-->
-                    <div formGroupName="billingAddress" class="form-area"><!-- customer is exactly same from customer: this.formBuilder.group({ in checkout.component-->
+                    <div formGroupName="billingAddress" ><!-- customer is exactly same from customer: this.formBuilder.group({ in checkout.component-->
                         <h3>Billing Address</h3>
                         <div class="row">
                             <div class="col-md-2"><label>Country</label></div>
@@ -230,7 +242,7 @@
                     </div>
 
                     <!-- Credit Card-->
-                    <div formGroupName="creditCard" class="form-area">
+                    <div formGroupName="creditCard" >
                         <h3>Credit Card </h3>
                         <div class="row">
                             <div class="col-md-2"><label>Card Type</label></div>

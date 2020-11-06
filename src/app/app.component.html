@@ -6,8 +6,9 @@
   </video>
 -->
 <div class="page-wrapper">
+  <div class="content2">
 <!-- MENU SIDEBAR-->
-<aside class="menu-sidebar d-none d-lg-block">
+
   <div class="logo">
     <a routerLink="/products">
       <img src="assets/images/products/logo.png" alt="luv2shop" class="img-responsive">
@@ -15,19 +16,27 @@
   </div>
     
      <app-product-category-menu></app-product-category-menu>
-</aside>
+
+</div>
 </div>
 
 <!-- END MENU SIDEBAR-->
 
 <!-- PAGE CONTAINER for the search and text and button-->
 <div class="page-container">
+  
+  <video autoplay muted loop id="myVideo">
+                <source src="assets/video.mp4" type="video/mp4">
+               
+              
+                </video>
+
   <!-- HEADER DESKTOP-->
   <header class="header-desktop">
     <div class="section-content section-content-p30">
       <div class="container-fluid">
         <div class="header-wrap">
-
+          
           
           <app-search></app-search>
           <!--
@@ -76,7 +85,16 @@
 		</ul>
   </footer>
 
+
+  <!--
   <body>
+
+    <div>
+
+    <img [src]="myimage" alt="">
+
+  </div>
+
     <div class="section">
 
       <div class="video-container">
@@ -88,3 +106,4 @@
 
   </div>
   </body>
+  -->
